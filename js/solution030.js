@@ -10,7 +10,7 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata y isn't considered a vowel.*/
 function disemvowel(str) {
     const vowels = ['a','e','i','o','u']
-        let newStr = str.split('').filter(el=>vowels.indexOf(el.toLowerCase()) ==-1).join('')
+        let newStr = str.split('').filter(letter=>vowels.indexOf(letter.toLowerCase()) ==-1).join('')
       
       return newStr; // return a new string with all vowels removed.
     }
