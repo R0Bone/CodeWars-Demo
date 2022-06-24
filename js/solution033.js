@@ -12,4 +12,4 @@ return nombreapellido.split(' ').map(word => word[0]).join('.').toUpperCase()
  }
 
  console.log(retornoInitials('Jorge Arreola'))// J.A
- console.log(retornoInitials('Michael Jordan'))// J.A
+ console.log(retornoInitials('Michael Jordan'))// M.J
