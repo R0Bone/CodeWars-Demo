@@ -1,0 +1,16 @@
+function DNAtoRNA(dna) {
+  let result = ''  
+ //let rna = dna.split('')
+ for(let i = 0;i< dna.length;i++){
+     if(dna[i] === 'T'){
+        result += 'U'
+     }else{
+         result += dna[i]
+     }
+ }
+ return result
+  }
+
+  console.log(DNAtoRNA('GCAT'))//  => GCAU
+  console.log(DNAtoRNA('GATC'))//  => GAUC
+  console.log(DNAtoRNA('TAGC'))//  => UAGC
