@@ -1,6 +1,6 @@
 function DNAtoRNA(dna) {
   let result = ''  
- //let rna = dna.split('')
+ 
  for(let i = 0;i< dna.length;i++){
      if(dna[i] === 'T'){
         result += 'U'
