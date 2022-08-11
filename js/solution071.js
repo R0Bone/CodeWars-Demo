@@ -15,4 +15,6 @@ function duplicateEncode(word){
    
 
 
-console.log(duplicateEncode('din'))//"((("
+console.log(duplicateEncode('din'))//"((("  
+
+
