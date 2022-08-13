@@ -24,8 +24,8 @@ function getSum( a,b )
    if(a ===b){
      return a
    }else{
-     for(let i= a; i <= b; i++){
-       sum += b[i]
+     for(let i= min; i <= max; i++){
+      sum = sum + i 
      }
    }
   return sum
