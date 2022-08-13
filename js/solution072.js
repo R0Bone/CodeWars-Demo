@@ -35,3 +35,4 @@ console.log(getSum(1,0))// 1+0 =1
 console.log(getSum(1,1))// 1 and 1 = 1 same number
 console.log(getSum(0,-1))// -1 + 0 = -1
 console.log(getSum(2,1))// 1 + 2 = 3
+//Beginner Series #3 Sum of Numbers
