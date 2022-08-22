@@ -8,4 +8,5 @@ function sumTwoSmallestNumbers(numbers) {
   of minimum 4 positive integers. No floats or non-positive integers will be passed */
   //take in an array of minimum 4 positive integers
   //return the sum of the two lowest numbers
+
   
