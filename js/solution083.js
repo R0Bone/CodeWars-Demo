@@ -10,4 +10,4 @@ console.log(solution('bling','ing'))
 console.log(solution('bling','lin'))
 
 
-///not completed 
+///not completed   String ends with?
