@@ -2,13 +2,13 @@ function solution(str, ending){
   
   
 
-  return str.includes(ending)
+  return str.endsWith(ending)
  
 }
 
-console.log(solution('bling','ing'))
-console.log(solution('bling','lin'))
+console.log(solution('bling','ing'))//true  
+console.log(solution('bling','lin'))//false
 
 
-///not completed   String ends with? 
+///  String ends with? 
 
