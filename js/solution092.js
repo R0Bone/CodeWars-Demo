@@ -5,16 +5,9 @@ It should remove all values from list a, which are present in list b keeping the
 
 
 function arrayDiff(a, b) {
-    let result = []
-  for(let i=0; i < a.length;i++){
-    for(let j=0; j < b.length; i++){
-        if(a[i] !== b[i]){
-            result.push(a[i])
-    }
-    
-    }
-  }
-  return result
+  
+    return a.filter(num => !b.includes(num));
+  
 }
 
-console.log(arrayDiff([1,2,2,2,3],[2])) // [1,3]
+console.log(arrayDiff([1,2,2,2,3],[2])) // [1,3]  
