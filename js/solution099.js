@@ -6,3 +6,5 @@ function check(a, x) {
 
   //take in an array (a) and a value (x). both can be either integers or strings
   // return boolean 
+
+  
