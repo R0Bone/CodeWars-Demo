@@ -12,7 +12,12 @@ function duplicateEncode(word){
         let unique = '';
      
           for (let i = 0; i < word.length; i++) {
-       
+                 /*'din'              'd'        'din'          'd'
+                 'din'             'i'         'din'          'i'
+                 'din'              'n'         'din'          'n'*/
+               //essentially  if 0 === 0
+               //             if 1 === 1
+               //             if 2 === 2
             if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
       
               unique += '(';
