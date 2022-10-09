@@ -8,7 +8,7 @@ function dontGiveMeFive(start, end){
     
     let total = 0
     
-    for(let i=start;i <= end;i++){
+    for(let i = start; i <= end; i++){
         let num = i.toString().split('') // break index number into an array of strings
         let checkIfFive = num.filter(number => number == '5').length // filter through array to check for number strings with a '5' and grab the length
             if(checkIfFive==0){// if number string has no '5's add 1 to total 
