@@ -11,14 +11,18 @@ function removeSmallest(numbers) {
   // function takes out ONLY the FIRST min integer
   function removeSmallest(numbers) {
 
-    const smallest = Math.min(...numbers);
-    const index = numbers.indexOf(smallest);
+    const smallest = Math.min(...numbers); // find the smallest integer using Math.min
+    const index = numbers.indexOf(smallest);// find the first instance/index of the smallest number using .indexOf
     
-    return numbers.filter((_, i) => i !== index);
+    return numbers.filter((_, i) => i !== index); // filter through the array and return every num/index that
+    // does not equal the index of the smallest number 
   
   }
 
   console.log(removeSmallest([5,3,1,1,4]))  // [5,3,1,4]
+  //take in an array of numbers
+  //return an array of numbers after the lowest number is removed
+  //don't change the order of the numbers inside the array
 
 
  /* The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior 
