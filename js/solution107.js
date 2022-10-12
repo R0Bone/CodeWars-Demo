@@ -30,12 +30,42 @@ If there are multiple elements with the same value, remove the one with a lower 
 If you get an empty array/list, return an empty array/list.
 
 Don't change the order of the elements that are left. */
-function removeSmallest(arrayOfNums){
-    let minNum = Math.min(...arrayOfNums)
-    let index = arrayOfNums.indexOf(minNum)
-    return arrayOfNums.filter((digit, i) => i !== index)
-}
+//function removeSmallest(arrayOfNums){
+    //let minNum = Math.min(...arrayOfNums)
+    //let index = arrayOfNums.indexOf(minNum)
+    //return arrayOfNums.filter((digit, i) => i !== index)
+//}
 
 
-console.log(removeSmallest([5,3,1,1,4]))  // [5,3,1,4]
-console.log(removeSmallest([9,7,3,5]))  // [9,7,5]
+//console.log(removeSmallest([5,3,1,1,4]))  // [5,3,1,4]
+//console.log(removeSmallest([9,7,3,5]))  // [9,7,5]
+
+/*  #99 Done
+
+#100  DONE!  Create a function that returns the sum of the two lowest positive numbers
+   given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.*/
+
+//function sumUpTwoLowest(array){
+    //return array.sort((a,b) => a - b).reduce((a,b) => array[0] + array[1])
+   
+//}
+
+//console.log(sumUpTwoLowest([2,3,4,5]))// 5
+//console.log(sumUpTwoLowest([19, 5, 42, 2, 77]))// 7
+
+//take in an array of numbers, positive, whole, minimum of 4 
+// the sum of the two lowest numbers 
+
+//[2,3,4,5]//5
+//[19, 5, 42, 2, 77]//7
+
+/* #101 /Take an array and remove every second element from the array.
+//Always keep the first element and start removing with the next element.
+//
+//Example:
+//["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+//
+//None of the arrays will be empty, so you don't have to worry about that!  */
+
