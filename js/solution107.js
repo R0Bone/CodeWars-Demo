@@ -69,3 +69,22 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 //
 //None of the arrays will be empty, so you don't have to worry about that!  */
 
+function removeEveryOther(array){
+    return array.filter((word,i) => i % 2 === 0)
+}
+console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"])) //["Keep","Keep","Keep"]
+
+
+
+/*#102   Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+
+Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+However, the arrays can have varying lengths, not just limited to 4. */
+
+function binaryToNum(array){
+    
+    return parseInt(array.join(''),2)
+    
+}
+console.log(binaryToNum([0, 0, 0, 1]))//1
