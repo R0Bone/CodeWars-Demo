@@ -61,7 +61,7 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 //[2,3,4,5]//5
 //[19, 5, 42, 2, 77]//7
 
-/* #101 /Take an array and remove every second element from the array.
+/* #101 DONE /Take an array and remove every second element from the array.
 //Always keep the first element and start removing with the next element.
 //
 //Example:
@@ -69,22 +69,53 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 //
 //None of the arrays will be empty, so you don't have to worry about that!  */
 
-function removeEveryOther(array){
-    return array.filter((word,i) => i % 2 === 0)
-}
-console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"])) //["Keep","Keep","Keep"]
+//function removeEveryOther(array){
+    //return array.filter((word,i) => i % 2 === 0)
+//}
+//console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"])) //["Keep","Keep","Keep"]
 
 
 
-/*#102   Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+/*#102  DONE  Given an array of ones and zeroes, convert the equivalent binary value to an integer.
 
 Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
 
 However, the arrays can have varying lengths, not just limited to 4. */
 
-function binaryToNum(array){
+//function binaryToNum(array){
     
-    return parseInt(array.join(''),2)
+    //return parseInt(array.join(''),2)
     
+//}
+//console.log(binaryToNum([0, 0, 0, 1]))//1
+
+/*#103 Done The goal of this exercise is to convert a string to a new string where each character 
+in the new string is "(" if that character appears only once in the original string, or ")"
+ if that character appears more than once in the original string. Ignore capitalization when 
+ determining if a character is a duplicate.*/
+
+function findDuplicateStr(string){
+   return string.split('').map(character => string.indexOf(character) === string.lastIndexOf(character) ? "(":")").join('')
+    
+    
+     
+
 }
-console.log(binaryToNum([0, 0, 0, 1]))//1
+
+console.log(findDuplicateStr('tiger'))// '((((('
+console.log(findDuplicateStr('moon'))// '())('
+
+// take in a string, ignore capitalization, 
+// we should return a new string consisting of either '(' or ')' 
+//depending on if a specific character appears more than once inside that given string
+
+
+
+/* #104 Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+
+Write a function which takes a list of strings and returns each line prepended by the correct number.
+
+The numbering starts at 1. The format is n: string. Notice the colon and space in between.
+
+Examples: (Input --> Output)*/
+
