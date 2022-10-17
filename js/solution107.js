@@ -94,16 +94,16 @@ in the new string is "(" if that character appears only once in the original str
  if that character appears more than once in the original string. Ignore capitalization when 
  determining if a character is a duplicate.*/
 
-function findDuplicateStr(string){
-   return string.split('').map(character => string.indexOf(character) === string.lastIndexOf(character) ? "(":")").join('')
+//function findDuplicateStr(string){
+   //return string.split('').map(character => string.indexOf(character) === string.lastIndexOf(character) ? "(":")").join('')
     
     
      
 
-}
+//}
 
-console.log(findDuplicateStr('tiger'))// '((((('
-console.log(findDuplicateStr('moon'))// '())('
+//console.log(findDuplicateStr('tiger'))// '((((('
+//console.log(findDuplicateStr('moon'))// '())('
 
 // take in a string, ignore capitalization, 
 // we should return a new string consisting of either '(' or ')' 
@@ -111,11 +111,17 @@ console.log(findDuplicateStr('moon'))// '())('
 
 
 
-/* #104 Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+/* #104 DONE Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
 
 Write a function which takes a list of strings and returns each line prepended by the correct number.
 
 The numbering starts at 1. The format is n: string. Notice the colon and space in between.
 
 Examples: (Input --> Output)*/
+
+function stringToLineNum(str){
+    return str.map((num,i) => `${i + 1}: ${num}`)
+}
+console.log(stringToLineNum(['one', 'two', 'three']))// 1: one, 2: two, 3: three
+console.log(stringToLineNum(["a","b","c"]))// 1: a, 2: b, 3: c
 

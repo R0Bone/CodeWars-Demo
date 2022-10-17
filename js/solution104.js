@@ -6,6 +6,10 @@ The numbering starts at 1. The format is n: string. Notice the colon and space i
 
 Examples: (Input --> Output)*/
 
+//take in an array of strings
+//return those strings in an array pre numbered beginning from 1
+// in this specific format, n: string 
+
 
 var number=function(array){
     let newarr = []
