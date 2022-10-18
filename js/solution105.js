@@ -17,4 +17,4 @@ function sortByLength (array) {
 console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"])) //["Eyes", "Glasses", "Monocles", "Telescopes"]
 console.log(sortByLength(["Beg", "Life", "I", "To"])) //["I", "To", "Beg", "Life"])
 //take in an array of strings
-//return an array of strings; in order of shortest length to longest
+//return an array of strings; in order of shortest string length to longest
