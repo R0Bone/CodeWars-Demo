@@ -134,14 +134,29 @@ sorted array containing the same strings, ordered from shortest to longest.
 All of the strings in the array passed to your function will be different lengths, 
 so you will not have to decide how to order multiple strings of the same length.*/
 
-function arrayShortToLong(array){
-    return array.sort((a,b) => a.length - b.length)
-}
-console.log(arrayShortToLong(["Telescopes", "Glasses", "Eyes", "Monocles"])) //["Eyes", "Glasses", "Monocles", "Telescopes"]
-console.log(arrayShortToLong(["Beg", "Life", "I", "To"])) //['I', "To","Beg", "Life"]
+//function arrayShortToLong(array){
+    //return array.sort((a,b) => a.length - b.length)
+//}
+//console.log(arrayShortToLong(["Telescopes", "Glasses", "Eyes", "Monocles"])) //["Eyes", "Glasses", "Monocles", "Telescopes"]
+//console.log(arrayShortToLong(["Beg", "Life", "I", "To"])) //['I', "To","Beg", "Life"]
 
 /* #106 In this kata you get the start number and the end number of a region and should return the 
 count of all numbers except numbers with a 5 in it. The start and the end number are both inclusive!
 The result may contain fives. ;-)
 The start number will always be smaller than the end number. Both numbers can be also negative!*/
 
+function notFive(start, end){
+   
+    let count = 0    
+    for(let i = start; i <= end; i++){
+       let num = i.toString().split('')
+       let checkForFive = num.filter(digit => digit === '5').length
+    if(checkForFive === 0){
+        count ++
+    }
+}
+    return count
+}
+console.log(notFive(3,9))////6
+console.log(notFive(10,20))////10
+console.log(notFive(4,17))// 12
