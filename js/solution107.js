@@ -145,18 +145,32 @@ count of all numbers except numbers with a 5 in it. The start and the end number
 The result may contain fives. ;-)
 The start number will always be smaller than the end number. Both numbers can be also negative!*/
 
-function notFive(start, end){
+//function notFive(start, end){
    
-    let count = 0    
-    for(let i = start; i <= end; i++){
-       let num = i.toString().split('')
-       let checkForFive = num.filter(digit => digit === '5').length
-    if(checkForFive === 0){
-        count ++
-    }
-}
-    return count
-}
-console.log(notFive(3,9))////6
-console.log(notFive(10,20))////10
-console.log(notFive(4,17))// 12
+    //let count = 0    
+    //for(let i = start; i <= end; i++){
+       //let num = i.toString().split('')
+       //let checkForFive = num.filter(digit => digit === '5').length
+    //if(checkForFive === 0){
+        //count ++
+    //}
+//}
+   // return count
+//}
+//console.log(notFive(3,9))////6
+//console.log(notFive(10,20))////10
+//console.log(notFive(4,17))// 12
+
+/* Write a small function that returns the values of an array that are not odd.
+
+All values in the array will be integers. Return the good values in the order they are given.
+
+*/
+function noOdds( values ){
+    return values.filter(num => num %2 == 0)
+  }
+  console.log(noOdds([0,1])) //[0]
+  console.log(noOdds( [0,1,2,3] ))//[0,2] 
+
+  //take in an array of integers / no funny business
+  // array with only even integers in same order as they are given 
