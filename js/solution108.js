@@ -15,19 +15,35 @@ given languages. Return the list of languages where your test score is at least 
 order of the results.
 
 Note: the scores will always be unique (so no duplicate values)   */
- function myLanguages(results) {
+ //function myLanguages(results) {
    
      
      
-         return Object.keys(results).filter(index => results[index] >= 60).sort((a,b) => results[b]-results[a])
+         //return Object.keys(results).filter(index => results[index] >= 60).sort((a,b) => results[b]-results[a])
      
     
 
-}
+//}
 
 //take in some objects with keys and values, all unique, and different languages
 // return an array with the objects/keys which language result or value is 60 + 
 // return it in descending order 
 
-console.log(myLanguages({"Java": 10, "Ruby": 80, "Python": 65})) //["Ruby", "Python"]
-console.log(myLanguages({"Hindi": 60, "Dutch" : 93, "Greek": 71}))  //-->  ["Dutch", "Greek", "Hindi"]
+//console.log(myLanguages({"Java": 10, "Ruby": 80, "Python": 65})) //["Ruby", "Python"]
+//console.log(myLanguages({"Hindi": 60, "Dutch" : 93, "Greek": 71}))  //-->  ["Dutch", "Greek", "Hindi"]
+
+
+function adjacentElementsProduct(array) {
+    let maxProduct = array[0] * array[1];
+    for (let i = 1; i < array.length; i++) {
+       product = array[i] * array[i + 1];
+       if (product > maxProduct)
+          maxProduct = product;
+    }
+    return maxProduct;
+ };
+
+  console.log(adjacentElementsProduct([5, 8])) // 40
+  console.log(adjacentElementsProduct([1, 2, 3])) // 6
+  console.log(adjacentElementsProduct([1, 5, 10, 9])) // 90
+  console.log(adjacentElementsProduct([4, 12, 3, 1, 5])) // 48 
